@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enrefrence — An open cultural index</title>
+  <meta name="description" content="Enrefrence, an open cultural index. Issue 002: Leonard Cohen, the lovesick monk.">
+  <meta name="theme-color" content="#1B31CC">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Finish the page wipe started on the previous page (site.js) before first paint.
+    try {
+      const label = sessionStorage.getItem("wipe");
+      if (label) {
+        sessionStorage.removeItem("wipe");
+        document.documentElement.classList.add("arriving");
+        document.documentElement.style.setProperty("--wipe-label", JSON.stringify(label));
+      }
+    } catch {}
+  </script>
+  <script src="site.js" defer></script>
+</head>
+<body class="home">
+  <header class="masthead">
+    <a class="logo" href="index.html" data-spin data-wipe="Enrefrence">Enrefrence</a>
+    <p class="meta">An open cultural index<br>Issue 002<br><time data-clock datetime="2026-10-20T00:00">12:00 AM / Oct 20, 2026</time></p>
+  </header>
+
+  <nav aria-label="Primary">
+    <ul class="nav">
+      <li><a href="index.html" aria-current="page">Index</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a href="play.html">Play</a></li>
+      <li><a href="los-angeles.html">Los Angeles</a></li>
+      <li><a href="new-york.html">New York</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="merch.html">Merch</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article class="feature">
+      <div class="feature-body">
+        <h1 class="title">Leonard Cohen</h1>
+        <p class="sub">Iss. 002<span class="sep">|</span>The Lovesick Monk</p>
+        <p class="dek">Leonard Cohen spent five years at a Zen monastery. In <cite>Book of Longing</cite>, desire turns up again when he least expects it.</p>
+        <div class="feature-links">
+          <a class="cta" href="article.html" data-wipe="Leonard Cohen"><span aria-hidden="true">[<span class="cta-arrow">↗</span>]</span><span class="cta-label">Read the feature</span></a>
+          <a class="u" href="article.html#poem" data-wipe="Disturbed This Morning">On the poem <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <button class="photo" type="button" data-flip aria-pressed="false" aria-label="Photo of Leonard Cohen on the mountain. Flip for the caption.">
+        <span class="photo-card">
+          <img class="photo-front" src="images/issue-002/cover.webp" alt="" width="1080" height="1350" fetchpriority="high">
+          <span class="photo-hint">[↻] Flip</span>
+          <span class="photo-back">
+            <span>Fig. 01</span>
+            <strong>Leonard Cohen, on the mountain.</strong>
+            <span>Iss. 002 — The Lovesick Monk</span>
+            <span>[↻] Flip back</span>
+          </span>
+        </span>
+      </button>
+
+    </article>
+
+    <section class="depts" data-depts aria-label="This issue's games">
+      <div class="dept-row">
+        <a class="dept" href="play.html#frame" data-panel="panel-frame"><span class="dept-num">Game 01</span>Frame of reference</a>
+        <a class="dept" href="play.html#needle" data-panel="panel-needle"><span class="dept-num">Game 02</span>Needle drop</a>
+        <a class="dept" href="play.html#where" data-panel="panel-where"><span class="dept-num">Game 03</span>Where + when</a>
+        <a class="dept" href="play.html#final" data-panel="panel-final"><span class="dept-num">Game 04</span>Final frame</a>
+      </div>
+      <div class="dept-drawer">
+        <div class="dept-drawer-inner">
+          <div class="dept-panels">
+            <div class="dept-panel" id="panel-frame" hidden>
+              <div class="demo demo-frame" aria-hidden="true"><img src="images/cohen.jpg" alt="" width="376" height="376"><span class="viewfinder"></span><span class="ticker"><span style="--n: 0">Frame 1/5</span><span style="--n: 1">Frame 2/5</span><span style="--n: 2">Frame 3/5</span><span style="--n: 3">Frame 4/5</span><span style="--n: 4">✓ Leonard Cohen</span></span></div>
+              <div class="dept-copy">
+                <p class="game-kicker">Game 01 <span>· Coming soon</span></p>
+                <p class="game-hook">Name it from a detail.</p>
+                <p>A tight crop. Every wrong guess pulls the frame back. Five frames to name the reference.</p>
+                <p class="game-eg">This issue: whose sneakers are under the robe?</p>
+                <div class="dept-actions">
+                  <a class="cta" href="play.html#frame" data-wipe="Frame of reference"><span>[<span class="cta-arrow">↗</span>]</span><span class="cta-label">How it plays</span></a>
+                  <button class="chip" type="button" data-close>Close</button>
+                </div>
+              </div>
+            </div>
+            <div class="dept-panel" id="panel-needle" hidden>
+              <div class="demo demo-needle" aria-hidden="true"><span class="record"></span><span class="sheen"></span><span class="arm"></span><span class="clip"><span></span></span><span class="ticker"><span style="--n: 0">Drop 1 · 0:01</span><span style="--n: 1">Drop 2 · 0:02</span><span style="--n: 2">Drop 3 · 0:04</span><span style="--n: 3">Drop 4 · 0:07</span><span style="--n: 4">✓ Ten New Songs</span></span></div>
+              <div class="dept-copy">
+                <p class="game-kicker">Game 02 <span>· Coming soon</span></p>
+                <p class="game-hook">Name the record.</p>
+                <p>The needle lands somewhere mid-song. One second, then two, then four. Six drops to get it.</p>
+                <p class="game-eg">This issue: one record from 2001, one second at a time.</p>
+                <div class="dept-actions">
+                  <a class="cta" href="play.html#needle" data-wipe="Needle drop"><span>[<span class="cta-arrow">↗</span>]</span><span class="cta-label">How it plays</span></a>
+                  <button class="chip" type="button" data-close>Close</button>
+                </div>
+              </div>
+            </div>
+            <div class="dept-panel" id="panel-where" hidden>
+              <div class="demo demo-where" aria-hidden="true"><span class="cross-x"></span><span class="cross-y"></span><span class="ripple"></span><span class="pin"></span><span class="year"><span class="year-thumb"></span></span><span class="ticker"><span style="--n: 0">Clue: cabin, zendo, snow</span><span style="--n: 1">Pin: San Gabriel Mtns</span><span style="--n: 2">Year: 1994</span><span style="--n: 3">0 km off · 0 yrs off</span><span style="--n: 4">✓ Mt. Baldy, 1994</span></span></div>
+              <div class="dept-copy">
+                <p class="game-kicker">Game 03 <span>· Coming soon</span></p>
+                <p class="game-hook">Pin it. Date it.</p>
+                <p>One clue. Drop a pin on the map, slide to the year. Points for getting close.</p>
+                <p class="game-eg">This issue: a cabin, a meditation hall, snow above the pines.</p>
+                <div class="dept-actions">
+                  <a class="cta" href="play.html#where" data-wipe="Where + when"><span>[<span class="cta-arrow">↗</span>]</span><span class="cta-label">How it plays</span></a>
+                  <button class="chip" type="button" data-close>Close</button>
+                </div>
+              </div>
+            </div>
+            <div class="dept-panel" id="panel-final" hidden>
+              <div class="demo demo-final" aria-hidden="true"><span class="scene"><span class="sun"></span><span class="ground"><span class="road"></span></span></span><span class="fin">Fin.</span><span class="ticker"><span style="--n: 0">The last shot of a film</span><span style="--n: 1">Guess 1 of 3</span><span style="--n: 2">Hint: the decade</span><span style="--n: 3">Hint: the director</span><span style="--n: 4">Fin.</span></span></div>
+              <div class="dept-copy">
+                <p class="game-kicker">Game 04 <span>· Coming soon</span></p>
+                <p class="game-hook">Name the film from its last shot.</p>
+                <p>One film, its final frame, three guesses. A hint after every miss.</p>
+                <p class="game-eg">Fair warning: it's all endings.</p>
+                <div class="dept-actions">
+                  <a class="cta" href="play.html#final" data-wipe="Final frame"><span>[<span class="cta-arrow">↗</span>]</span><span class="cta-label">How it plays</span></a>
+                  <button class="chip" type="button" data-close>Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-row">
+      <form class="signup" data-signup>
+        <label for="footer-email">Sign up for the newsletter</label>
+        <span class="signup-field">
+          <input id="footer-email" type="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+          <button type="submit">Subscribe</button>
+        </span>
+      </form>
+      <ul class="social">
+        <li><a class="u" href="#">Instagram</a></li>
+        <li><a class="u" href="#">YouTube</a></li>
+        <li><a class="u" href="#">Spotify</a></li>
+      </ul>
+    </div>
+    <div class="footer-base">
+      <span>&copy; 2026 Enrefrence</span>
+      <a class="u" href="about.html">About</a>
+    </div>
+  </footer>
+</body>
+</html>

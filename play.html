@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Play — Enrefrence</title>
+  <meta name="description" content="Four games, every issue: Frame of reference, Needle drop, Where + when and Final frame.">
+  <meta name="theme-color" content="#1B31CC">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Finish the page wipe started on the previous page (site.js) before first paint.
+    try {
+      const label = sessionStorage.getItem("wipe");
+      if (label) {
+        sessionStorage.removeItem("wipe");
+        document.documentElement.classList.add("arriving");
+        document.documentElement.style.setProperty("--wipe-label", JSON.stringify(label));
+      }
+    } catch {}
+  </script>
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="logo" href="index.html" data-spin data-wipe="Enrefrence">Enrefrence</a>
+    <p class="meta">An open cultural index<br>Issue 002<br><time data-clock datetime="2026-10-20T00:00">12:00 AM / Oct 20, 2026</time></p>
+  </header>
+
+  <nav aria-label="Primary">
+    <ul class="nav">
+      <li><a href="index.html">Index</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a href="play.html" aria-current="page">Play</a></li>
+      <li><a href="los-angeles.html">Los Angeles</a></li>
+      <li><a href="new-york.html">New York</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="merch.html">Merch</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="page-head">
+      <div class="page-head-row">
+        <h1 class="title">Play</h1>
+      </div>
+      <p class="sub">Iss. 002<span class="sep">|</span>Four games, every issue</p>
+    </header>
+
+    <section class="section">
+      <p class="dek">Every issue comes with four games built from its subject. They're still in the workshop. Here's how each one plays.</p>
+      <ul class="games">
+        <li class="game" id="frame">
+          <div class="demo demo-frame" aria-hidden="true"><img src="images/cohen.jpg" alt="" width="376" height="376"><span class="viewfinder"></span><span class="ticker"><span style="--n: 0">Frame 1/5</span><span style="--n: 1">Frame 2/5</span><span style="--n: 2">Frame 3/5</span><span style="--n: 3">Frame 4/5</span><span style="--n: 4">✓ Leonard Cohen</span></span></div>
+          <h2 class="game-name"><span>01</span>Frame of reference</h2>
+          <p class="game-hook">Name it from a detail.</p>
+          <ol class="rules"><li>Starts tight on a detail</li><li>Every miss pulls back</li><li>Five frames to name it</li></ol>
+          <span class="status">Coming soon</span>
+        </li>
+        <li class="game" id="needle">
+          <div class="demo demo-needle" aria-hidden="true"><span class="record"></span><span class="sheen"></span><span class="arm"></span><span class="clip"><span></span></span><span class="ticker"><span style="--n: 0">Drop 1 · 0:01</span><span style="--n: 1">Drop 2 · 0:02</span><span style="--n: 2">Drop 3 · 0:04</span><span style="--n: 3">Drop 4 · 0:07</span><span style="--n: 4">✓ Ten New Songs</span></span></div>
+          <h2 class="game-name"><span>02</span>Needle drop</h2>
+          <p class="game-hook">Name the record.</p>
+          <ol class="rules"><li>The needle lands mid-song</li><li>1, 2, 4, 7, 11, 16 seconds</li><li>Six drops to name the record</li></ol>
+          <span class="status">Coming soon</span>
+        </li>
+        <li class="game" id="where">
+          <div class="demo demo-where" aria-hidden="true"><span class="cross-x"></span><span class="cross-y"></span><span class="ripple"></span><span class="pin"></span><span class="year"><span class="year-thumb"></span></span><span class="ticker"><span style="--n: 0">Clue: cabin, zendo, snow</span><span style="--n: 1">Pin: San Gabriel Mtns</span><span style="--n: 2">Year: 1994</span><span style="--n: 3">0 km off · 0 yrs off</span><span style="--n: 4">✓ Mt. Baldy, 1994</span></span></div>
+          <h2 class="game-name"><span>03</span>Where + when</h2>
+          <p class="game-hook">Pin it. Date it.</p>
+          <ol class="rules"><li>One photograph or clue</li><li>Drop a pin, slide to the year</li><li>Up to 5,000 points</li></ol>
+          <span class="status">Coming soon</span>
+        </li>
+        <li class="game" id="final">
+          <div class="demo demo-final" aria-hidden="true"><span class="scene"><span class="sun"></span><span class="ground"><span class="road"></span></span></span><span class="fin">Fin.</span><span class="ticker"><span style="--n: 0">The last shot of a film</span><span style="--n: 1">Guess 1 of 3</span><span style="--n: 2">Hint: the decade</span><span style="--n: 3">Hint: the director</span><span style="--n: 4">Fin.</span></span></div>
+          <h2 class="game-name"><span>04</span>Final frame</h2>
+          <p class="game-hook">Name the film from its last shot.</p>
+          <ol class="rules"><li>One film's final shot</li><li>A hint after every miss</li><li>Three guesses</li></ol>
+          <span class="status">Coming soon</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section warmup" data-roulette>
+      <h2 class="sub">Warm-up<span class="sep">|</span>Reference roulette</h2>
+      <p class="dek">Spin the index. Watch it, read it or put it on tonight.</p>
+      <div class="roulette" style="margin-top: 2em">
+        <div class="slot" aria-live="polite">
+          <div class="slot-meta"><span data-field="type"></span><span data-field="year"></span></div>
+          <p class="slot-title" data-field="title"></p>
+          <p class="slot-by" data-field="by"></p>
+        </div>
+        <button class="spin" type="button">[↻] Spin</button>
+      </div>
+      <ol class="history" hidden aria-label="Your spins"></ol>
+      <ol class="reel" aria-label="Everything on the wheel">
+          <li data-by="Leonard Cohen" data-type="Record" data-year="1967"><b>Songs of Leonard Cohen</b> — Leonard Cohen, 1967</li>
+          <li data-by="Wong Kar-wai" data-type="Film" data-year="1994"><b>Chungking Express</b> — Wong Kar-wai, 1994</li>
+          <li data-by="Joan Didion" data-type="Book" data-year="1979"><b>The White Album</b> — Joan Didion, 1979</li>
+          <li data-by="Alice Coltrane" data-type="Record" data-year="1971"><b>Journey in Satchidananda</b> — Alice Coltrane, 1971</li>
+          <li data-by="Agnès Varda" data-type="Film" data-year="1962"><b>Cléo from 5 to 7</b> — Agnès Varda, 1962</li>
+          <li data-by="Arthur Russell" data-type="Record" data-year="1986"><b>World of Echo</b> — Arthur Russell, 1986</li>
+          <li data-by="Patti Smith" data-type="Book" data-year="2010"><b>Just Kids</b> — Patti Smith, 2010</li>
+          <li data-by="Wim Wenders" data-type="Film" data-year="1984"><b>Paris, Texas</b> — Wim Wenders, 1984</li>
+          <li data-by="Nick Drake" data-type="Record" data-year="1972"><b>Pink Moon</b> — Nick Drake, 1972</li>
+          <li data-by="Maggie Nelson" data-type="Book" data-year="2009"><b>Bluets</b> — Maggie Nelson, 2009</li>
+          <li data-by="Andrei Tarkovsky" data-type="Film" data-year="1979"><b>Stalker</b> — Andrei Tarkovsky, 1979</li>
+          <li data-by="Leonard Cohen" data-type="Book" data-year="2006"><b>Book of Longing</b> — Leonard Cohen, 2006</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-row">
+      <form class="signup" data-signup>
+        <label for="footer-email">Sign up for the newsletter</label>
+        <span class="signup-field">
+          <input id="footer-email" type="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+          <button type="submit">Subscribe</button>
+        </span>
+      </form>
+      <ul class="social">
+        <li><a class="u" href="#">Instagram</a></li>
+        <li><a class="u" href="#">YouTube</a></li>
+        <li><a class="u" href="#">Spotify</a></li>
+      </ul>
+    </div>
+    <div class="footer-base">
+      <span>&copy; 2026 Enrefrence</span>
+      <a class="u" href="about.html">About</a>
+    </div>
+  </footer>
+</body>
+</html>

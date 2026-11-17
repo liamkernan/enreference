@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Newsletter — Enrefrence</title>
+  <meta name="description" content="One index, once a month, in your inbox.">
+  <meta name="theme-color" content="#1B31CC">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Finish the page wipe started on the previous page (site.js) before first paint.
+    try {
+      const label = sessionStorage.getItem("wipe");
+      if (label) {
+        sessionStorage.removeItem("wipe");
+        document.documentElement.classList.add("arriving");
+        document.documentElement.style.setProperty("--wipe-label", JSON.stringify(label));
+      }
+    } catch {}
+  </script>
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="logo" href="index.html" data-spin data-wipe="Enrefrence">Enrefrence</a>
+    <p class="meta">An open cultural index<br>Issue 002<br><time data-clock datetime="2026-10-20T00:00">12:00 AM / Oct 20, 2026</time></p>
+  </header>
+
+  <nav aria-label="Primary">
+    <ul class="nav">
+      <li><a href="index.html">Index</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a href="play.html">Play</a></li>
+      <li><a href="los-angeles.html">Los Angeles</a></li>
+      <li><a href="new-york.html">New York</a></li>
+      <li><a href="newsletter.html" aria-current="page">Newsletter</a></li>
+      <li><a href="merch.html">Merch</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="page-head">
+      <div class="page-head-row">
+        <h1 class="title">Newsletter</h1>
+      </div>
+      <p class="sub">Once a month<span class="sep">|</span>One index, in your inbox</p>
+    </header>
+
+    <section class="section">
+      <p class="pitch">One person, one record, one place, one picture. Nothing else.</p>
+      <ol class="points">
+        <li><span>01</span>The new issue, before it goes live</li>
+        <li><span>02</span>Listings for Los Angeles and New York</li>
+        <li><span>03</span>Invitations to member events</li>
+      </ol>
+      <form class="signup signup-big" data-signup>
+        <label class="visually-hidden" for="newsletter-email">Email address</label>
+        <span class="signup-field">
+          <input id="newsletter-email" type="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+          <button type="submit">Subscribe</button>
+        </span>
+      </form>
+    </section>
+
+    <section class="newsletter-issue" aria-labelledby="newsletter-issue-title">
+      <p class="story-kicker">Latest issue · 002</p>
+      <h2 id="newsletter-issue-title">Leonard Cohen: The Lovesick Monk</h2>
+      <a class="cta" href="article.html" data-wipe="Leonard Cohen"><span aria-hidden="true">[<span class="cta-arrow">↗</span>]</span><span class="cta-label">Read Issue 002</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-row">
+      <form class="signup" data-signup>
+        <label for="footer-email">Sign up for the newsletter</label>
+        <span class="signup-field">
+          <input id="footer-email" type="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+          <button type="submit">Subscribe</button>
+        </span>
+      </form>
+      <ul class="social">
+        <li><a class="u" href="#">Instagram</a></li>
+        <li><a class="u" href="#">YouTube</a></li>
+        <li><a class="u" href="#">Spotify</a></li>
+      </ul>
+    </div>
+    <div class="footer-base">
+      <span>&copy; 2026 Enrefrence</span>
+      <a class="u" href="about.html">About</a>
+    </div>
+  </footer>
+</body>
+</html>

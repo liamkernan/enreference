@@ -1,0 +1,9 @@
+.DS_Store
+._*
+.claude/
+_old/
+dist/
+.env
+.env.*
+*.log
+__pycache__/

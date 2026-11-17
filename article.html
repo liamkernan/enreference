@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leonard Cohen: The Lovesick Monk — Enrefrence</title>
+  <meta name="description" content="Issue 002 of Enrefrence. Leonard Cohen, Mount Baldy, and the persistence of desire.">
+  <meta name="theme-color" content="#1B31CC">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Finish the page wipe started on the previous page (site.js) before first paint.
+    try {
+      const label = sessionStorage.getItem("wipe");
+      if (label) {
+        sessionStorage.removeItem("wipe");
+        document.documentElement.classList.add("arriving");
+        document.documentElement.style.setProperty("--wipe-label", JSON.stringify(label));
+      }
+    } catch {}
+  </script>
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <div class="progress" data-progress aria-hidden="true"></div>
+  <header class="masthead">
+    <a class="logo" href="index.html" data-spin data-wipe="Enrefrence">Enrefrence</a>
+    <p class="meta">An open cultural index<br>Issue 002<br><time data-clock datetime="2026-10-20T00:00">12:00 AM / Oct 20, 2026</time></p>
+  </header>
+
+  <nav aria-label="Primary">
+    <ul class="nav">
+      <li><a href="index.html">Index</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a href="play.html">Play</a></li>
+      <li><a href="los-angeles.html">Los Angeles</a></li>
+      <li><a href="new-york.html">New York</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="merch.html">Merch</a></li>
+    </ul>
+  </nav>
+
+  <main class="issue-story">
+    <article>
+      <header class="story-opening">
+        <div class="story-heading">
+          <p class="story-kicker">Issue 002</p>
+          <h1>Leonard Cohen<span class="visually-hidden">:</span> <em>The Lovesick Monk</em></h1>
+          <p class="story-subtitle">Five years at Mount Baldy and the poetry of wanting.</p>
+          <p class="story-intro">Leonard Cohen went to a Zen monastery in 1994 and spent five years there. A poem from <cite>Book of Longing</cite> catches him in a less composed moment, surprised by a desire he thought had gone quiet.</p>
+          <nav class="story-jumps" aria-label="In this story">
+            <a class="cta" href="#essay"><span aria-hidden="true">[↓]</span><span class="cta-label">Read the feature</span></a>
+            <a class="u" href="#poem">On the poem <span aria-hidden="true">↓</span></a>
+          </nav>
+        </div>
+        <figure class="story-cover">
+          <img src="images/issue-002/cover.webp" alt="Leonard Cohen in black robes and sneakers, standing on a rock against snowy mountains" width="1080" height="1350" fetchpriority="high">
+        </figure>
+      </header>
+
+      <div class="story-sheet">
+        <section class="story-section" id="essay" aria-labelledby="essay-title">
+          <h2 id="essay-title" class="story-kicker">The feature</h2>
+          <div class="story-spread">
+            <div class="story-copy">
+              <p class="story-lede">Up in California’s San Gabriel Mountains, the routines of a Zen monastery gave one of music’s great romantics a different way to spend his days.</p>
+              <p>Cohen practiced under Joshu Sasaki at Mount Baldy Zen Center. He took the monastic name Jikan, “the silent one,” when he was ordained in 1996. He continued to identify as Jewish and found room for both traditions in his life.</p>
+              <p>Some of the poems and drawings he worked on at Mount Baldy made their way into <cite>Book of Longing</cite>, published in 2006. The collection moves readily from religious devotion to sex, aging, and jokes at Cohen’s own expense. Monastic life gave him another angle on the preoccupations that had always fed his writing.</p>
+              <p>In “Disturbed This Morning,” his equanimity lasts right up until he wants someone again. Cohen gives the return of desire the timing of a punchline and the candor of a confession.</p>
+            </div>
+            <figure class="story-figure">
+              <img src="images/issue-002/meditation.webp" alt="Black-and-white photograph of Leonard Cohen sitting cross-legged in robes in front of a stone wall" width="1080" height="1350" loading="lazy" decoding="async">
+              <figcaption>Cohen seated in meditation</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="story-section" id="poem" aria-labelledby="poem-title">
+          <p class="story-kicker">From <cite>Book of Longing</cite></p>
+          <div class="story-spread story-poem">
+            <div>
+              <h2 id="poem-title" class="story-display">Disturbed This Morning</h2>
+              <div class="story-copy">
+                <p>The speaker has been enjoying a kind of serene affection for everyone. Then he finds himself longing for one person’s attention, and his thoughts get very specific. The poem narrows line by line as his attention narrows with it.</p>
+              </div>
+              <a class="story-link" href="https://www.penguin.co.uk/books/55862/book-of-longing-by-leonard-cohen/9780141027562">Explore <cite>Book of Longing</cite> at Penguin <span aria-hidden="true">↗</span></a>
+            </div>
+            <figure class="story-figure">
+              <img src="images/issue-002/book-of-longing.webp" alt="Book of Longing cover with a colorful hand-drawn bird on ruled paper" width="1080" height="1350" loading="lazy" decoding="async">
+              <figcaption><cite>Book of Longing</cite>, Leonard Cohen</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="story-section" aria-labelledby="note-title">
+          <h2 id="note-title" class="story-kicker">A note from Elliot</h2>
+          <div class="story-closing">
+            <figure class="story-figure">
+              <img src="images/issue-002/portrait.webp" alt="Close-up portrait of Leonard Cohen with his eyes closed and chin resting on his hand" width="1080" height="1350" loading="lazy" decoding="async">
+            </figure>
+            <figure class="story-figure">
+              <img src="images/issue-002/elliots-note.webp" alt="Elliot’s handwritten note on what he admires about Cohen: the tension between spiritual discipline and human desire, captured in Disturbed This Morning." width="1080" height="1350" loading="lazy" decoding="async">
+            </figure>
+          </div>
+        </section>
+      </div>
+
+      <div class="story-end">
+        <a class="u" href="archive.html" data-wipe="Archive"><span aria-hidden="true">[←]</span> Back to archive</a>
+        <a class="u" href="newsletter.html" data-wipe="Newsletter">Newsletter <span aria-hidden="true">[↗]</span></a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-row">
+      <form class="signup" data-signup>
+        <label for="footer-email">Sign up for the newsletter</label>
+        <span class="signup-field">
+          <input id="footer-email" type="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+          <button type="submit">Subscribe</button>
+        </span>
+      </form>
+      <ul class="social">
+        <li><a class="u" href="#">Instagram</a></li>
+        <li><a class="u" href="#">YouTube</a></li>
+        <li><a class="u" href="#">Spotify</a></li>
+      </ul>
+    </div>
+    <div class="footer-base">
+      <span>&copy; 2026 Enrefrence</span>
+      <a class="u" href="about.html">About</a>
+    </div>
+  </footer>
+</body>
+</html>
